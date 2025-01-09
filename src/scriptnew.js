@@ -47,7 +47,7 @@ function departmentPredictor(GPA,rank){
     }else if(GPA>=3.4){
         var message = "You are eligible to be selected to any department excluding ENTC and BME."
     }else{
-        var message =  "Can be selected to any department excluding ENTC, BME, CSE and EE."
+        var message =  "You are eligible to be selected to any department excluding ENTC, BME, CSE and EE."
     }
     message="Congratulations on your results! "+message;
     return message
