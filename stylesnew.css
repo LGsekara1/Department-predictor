@@ -1,0 +1,435 @@
+.header{
+    display: flex;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow:inset;
+    white-space: nowrap;
+    
+    margin-bottom: 10px;
+
+}
+
+.logo{
+    height: 150;
+    width: 150;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.heading{
+    width:auto;
+    height:auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.heading h1{
+    font-family: sans-serif;
+    color: whitesmoke;
+    margin-top: 15px;
+    margin-left: auto;
+    font-size: 30px;
+    
+}
+
+.heading h2{
+    color: wheat;
+    margin-left: auto;
+    margin-top: -20;
+    font-size: 35px;
+    font-style:normal;
+    
+}
+
+.heading h3{
+    color: white;
+    margin-left:10px ;
+    margin-top: 45px;
+    font-size: 25px;
+    
+}
+
+
+
+body{
+    width:auto;
+    
+    background: linear-gradient(358deg, #ba792c, #a30b4a00);
+    }
+
+.container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    border: 10px groove #ba792c;
+    border-spacing: 10px;
+    
+    text-align: center;
+
+}
+
+.container intro{
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    border-style: groove;
+    border-color: #ba792c;
+    background-color: brown;
+    white-space: nowrap;
+    width:100px;
+    height:100px;
+    margin-bottom: 10px;
+    
+}
+
+.container h4{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style:italic;
+    color:red;
+}
+
+
+form[name="data"]{
+    font-size: 20px;
+    border-radius: 15px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+
+#Inputindex{
+    width: auto;
+    height:20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow:inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+#InputGPA{
+    width: auto;
+    height:20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow:inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow:inset;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+#Inputrank{
+    width: auto;
+    height:20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow:inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+.submit_button{
+    background-color: brown;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    box-shadow: inset 5px 5px 5px rgb(189 127 54);
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+    width:auto;
+    height:auto;
+    margin-bottom: 10px;
+
+}
+
+.submit_button:hover{
+    background-color: #ba2c2c;
+}
+
+#dialog{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border-style: ridge;
+    border: 10px groove #ba792c;
+    background: linear-gradient(5deg, #dda054, white);
+    width: 350px;
+    height: 200px;
+    position: fixed;
+    top: 50%;left: 50%;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transform:translate(-50%,-50%) scale(0.8);
+    transition:opacity 0.4s ease,transform 0.4s ease;
+
+}
+
+#dialog.visible{
+    transform:translate(-50%,-50%) scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+#dialogcontent{
+    font-size: auto;
+    text-align: center;
+    
+}
+#button_container{
+    display:flex;
+    flex-direction: row;
+}
+
+.ok_button{
+    background-color: brown;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    box-shadow: inset 5px 5px 5px rgb(189 127 54);
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+    width:auto;
+    height:auto;
+    margin-bottom: 10px;
+
+}
+
+.ok_button:hover{
+    background-color: #ba2c2c;
+}
+
+h2{
+    border-top:#ba792c solid;
+    border-bottom: #ba792c solid;
+    padding:10px;
+    font-style:italic;
+    text-align: center;
+}
+.tableContainer{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-top:10px;
+    border-radius: 15px;
+    border:#ba2c2c solid;
+    box-shadow:inset;
+    white-space: normal;
+    margin-bottom: 10px;
+    gap:10px;
+    align-items: flex-start;
+    text-wrap: normal;
+    width:auto;
+}
+
+.tableContainer txt{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    align-items: center;
+}
+.tableContainer txt h4{
+    flex:1;
+    overflow-wrap:break-word;
+    margin-top: 100px;
+    text-align: center;
+    white-space: normal;
+    text-align: justify;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight:100;
+    
+}
+
+.tableContainer h1{
+    color:rgb(252 177 23);
+    font-style:italic;
+    text-align: center;
+    font-size: 100px;
+    transition:transform 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+
+.tableContainer h1:hover{
+    cursor: pointer;
+    transform: scale3d(2,2,2);
+    
+}
+
+.tableContainer table{
+    table-layout: auto;
+    background-color: brown;
+    border-collapse: collapse;
+    border-color: #231818;
+    width:50%;
+    
+}
+
+.tableContainer table tr th{
+    background-color: rgb(165 42 42);
+    color: antiquewhite;
+    font-weight: 200;
+    padding:10px;
+}
+
+.tableContainer table tr td{
+    background-color: rgb(252 177 23);
+    text-align: center;
+}
+
+
+.departments{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow:inset;
+    white-space: nowrap;
+    width:auto;
+    height:auto;
+    margin-bottom: 100px;
+
+
+}
+
+.departments h2{
+    background-color: brown;
+    color:whitesmoke;
+    border-radius: 15px;
+    width: auto;height: auto;
+    padding: 15px; 
+    font-size:50px; 
+}
+
+.departments deptContainer{
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+    background: linear-gradient(90deg, #fff, #e6e6e6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.dept{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    text-wrap: auto;
+    text-decoration: none;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border-color: brown;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -4px -4px 10px brown;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.departments img{
+    width:300px;height:200px;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    filter:drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+    opacity:calc(0.7);
+
+}
+
+.dept:hover{
+    text-decoration: none;
+    opacity:calc(1);
+    transform: translateY(-10px);
+    animation-duration: 0.2s;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3), -6px -6px 15px rgba(255, 255, 255, 0.6);
+    
+}
+
+.imgtxt{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+    font-style: oblique;
+    text-wrap: auto;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    margin: auto;
+    font-size: 30px;
+    
+}
+
+.deptname{
+    text-decoration: none;
+    text-wrap: normal;
+    font-style:italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.intake{
+    text-decoration:none;
+    color:white;
+    
+}
+
+.deptContainer ul{ 
+    text-decoration: none;
+    text-align: left;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: brown;
+    text-align: center;
+    align-items: center;
+    width: 100%;height:auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    
+    
+}
+
+.f1{
+    text-align: left;
+    max-width: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.f2{
+    text-wrap: auto; 
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    width: auto;
+}
+
+.f3{
+    text-align: right;
+    right: 10px;
+    position: fixed;
+}
