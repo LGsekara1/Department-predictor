@@ -11,7 +11,7 @@ The tool takes the student index number to validate the identity and then uses G
 - Resposnive design.
 - JS functionality for validation of input data and exlude departments that cannot be applied based on past data.
 - Server-side processing with Flask framework (locally hosted) to access the ML model.
-- The ML model was trained using a 2 layer neural network (64x32) 
+- The ML model was trained using a 2 layer feed forward neural network (64x32) 
 
 ## **Installation**
 Since this is a static website no build is required. Download the repo and open the indexnew.html in a browser.
